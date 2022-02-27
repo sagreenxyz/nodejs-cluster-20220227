@@ -1,8 +1,6 @@
-import cluster from 'cluster';
-import http from 'http';
-import {cpus} from 'os';
-import process from 'process';
-
-const numCPUs = cpus().length;
+const cluster = require('cluster');
+const http = require('http');
+const numCPUs = require('os').cpus().length;
+const process = require('process');
 
 console.log(numCPUs);
